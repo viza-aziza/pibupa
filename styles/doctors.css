@@ -1,0 +1,53 @@
+/* doctors.css */
+.doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; /* Use gap for spacing between items */
+    padding: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.doctor {
+    border: 1px solid #ddd;
+    padding: 30px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff; /* Added for better contrast */
+    width: 400px; /*Fixed width to maintain aspect ratio*/
+}
+
+.doctor img {
+    width: 100%;
+    height: auto;
+    max-width: 350px; /* Increased max-width */
+    margin-bottom: 10px;
+    border-radius: 50%; /* Keeps images circular */
+    object-fit: cover; /* Maintains aspect ratio while filling container */
+}
+
+.doctor h3 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.doctor p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .doctor-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.page-header {
+    text-align: center;
+    padding: 2rem 0; /* Adjust padding values as needed */
+  }
+
+
+
+  

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ветеринарная клиника "Здоровье питомца" - Контакты</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/contacts.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script> </head>
+<body>
+    <header>
+        <nav role="navigation">
+            <a href="./index.html" class="logo" aria-label="Здоровье питомца">Здоровье питомца</a>
+            <ul class="hidden">
+                <li><a href="./index.html">Главная</a></li>
+                <li><a href="./services.html">Услуги</a></li>
+                <li><a href="./about.html">Врачи</a></li>
+                <li><a href="./contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header hidden">
+            <h1>Контакты</h1>
+            <p>Свяжитесь с нами удобным для вас способом.</p>
+        </section>
+
+        <section class="contact-form hidden">
+            <h2>Обратная связь</h2>
+            <form action="#" method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+
+        <section id="map-section">
+            
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="map-container">
+            <iframe class="mapID" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa353e721a8da4dde4e438c49efe1decb78d97969074009edc241fc4dd2b4c173&amp;source=constructor" 
+                    width="600" height="400" frameborder="0" allowfullscreen></iframe>
+            <div class="map-overlay">
+                <h3>Наш адрес:</h3>
+                <p>г. Москва, Большая Семёновская улица, 10с11</p>
+                <p>Мы всегда рады помочь вашим любимцам!</p>
+            </div>
+        </div>
+        
+        <p>&copy; 2023 Ветеринарная клиника "Здоровье питомца". Все права защищены.</p>
+    </footer>
+    <!-- Модальное окно -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Спасибо!</h2>
+        <p>Ваша заявка успешно отправлена!</p>
+        <button id="modal-ok-button">ОК</button>
+    </div>
+</div>
+
+<script src="scripts/main.js"></script>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,114 @@
+/* contacts.css */
+.contact-info, .contact-form, #map-section {
+    padding: 2rem;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+}
+
+
+.contact-form form {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #FFD700;
+    color: #333;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.page-header {
+    text-align: center; /* Centers the text within the section */
+    padding: 2rem 0; /* Adjust padding as needed */ /* Added padding for better spacing */
+    margin-bottom: 2rem; /* Adds space below the header */
+}
+
+.page-header h1 {
+    margin-bottom: 0.5rem; /* Reduce spacing between h1 and p */
+}
+/* Стили для модального окна */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Фиксированная позиция */
+    z-index: 1; /* На верхнем уровне */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Позволить прокрутку, если нужно */
+    background-color: rgba(0, 0, 0, 0.6); /* Черный фон с большей прозрачностью */
+}
+
+/* Стили для содержимого модального окна */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; /* Центрируем по вертикали и горизонтали */
+    padding: 20px;
+    border: none;
+    border-radius: 10px; /* Сглаженные углы */
+    width: 300px; /* Ширина модального окна */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для глубины */
+}
+
+/* Стили для крестика закрытия */
+.close-button {
+    color: #888;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000; /* Изменяем цвет при наведении */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Стили для заголовка модального окна */
+.modal-content h2 {
+    margin-top: 0; /* Убираем верхний отступ */
+    color: #333; /* Цвет заголовка */
+}
+
+/* Стили для текста внутри модального окна */
+.modal-content p {
+    color: #666; /* Цвет текста */
+}
+
+/* Стили для кнопок в модальном окне */
+#modal-ok-button {
+    background-color: #28a745; /* Зеленый цвет фона */
+    color: white; /* Белый текст */
+    border: none; /* Убираем рамку */
+    padding: 10px 20px; /* Отступы для кнопки */
+    border-radius: 5px; /* Сглаженные углы */
+    cursor: pointer; /* Курсор указатель */
+    font-size: 16px; /* Размер шрифта */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+
+#modal-ok-button:hover {
+    background-color: #218838; /* Темнее зеленый цвет при наведении */
+}
+
